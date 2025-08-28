@@ -1,0 +1,219 @@
+# 开发社社团入社小问卷
+班级：      
+姓名：      
+学号：      
+
+---
+
+## 注意事项
+
+感谢同学们的积极参与！本社非常欢迎**零基础**的同学参加，但在此之前，我们需要对大家的水平进行一个摸底，以方便我们未来社团课程和活动的开展。\
+如果不会大可以空白着交上来（出卷人入社时也是纯小白），还请诚信作答，不要依赖网络或他人！\
+>[!IMPORTANT]
+>部分题目的条件在**选项下方**，读题时请注意。
+
+>以下是15道**单项选择题**和1道**简答题**，答案请写在**结尾的答题区域**内。\
+>第一部分为计算机常识，共**8**题。\
+>第二部分为Python基础，共**7**题。\
+>第三部分为畅所欲言，共**1**题。
+
+---
+
+### 以下为第一部分。
+
+1.  你的笔记本电脑CPU是 `Intel Core i7-13700H`，运行Windows 11，在某软件官网下载时，你看到了以下几个版本，你应该下载哪个才能保证最佳兼容性和性能？\
+A. `software-v1.2-windows-arm64.exe`\
+B. `software-v1.2-windows-x86_64.msi`\
+C. `software-v1.2-windows-x86.exe`\
+D. `software-v1.2-macos-arm64.dmg`
+
+2.  在Windows CMD中，如何设置一个临时环境变量 `PATH` 为当前值加上 `C:\Tools`（仅当前会话有效）？  
+A. `set PATH = C:\Tools`  \
+B. `set PATH=%PATH%;C:\Tools`  \
+C. `export PATH=C:\Tools`  \
+D. `env PATH=C:\Tools`  
+
+3.  在浏览器访问某网站提示 “NET::ERR_CERT_DATE_INVALID”。以下哪项最可能立刻解决问题？  
+A. 清空浏览器缓存  
+B. 调整本机系统时间到正确的日期  
+C. 重装浏览器  
+D. 修改 hosts 文件
+
+4.  你感觉电脑运行突然变得非常卡顿，风扇狂转。你想找出是哪个程序在“作怪”，占用大量CPU资源。你应该优先使用Windows哪个自带工具？  
+    A. 控制面板 (Control Panel)   
+    B. 任务管理器 (Task Manager)   
+    C. 事件查看器 (Event Viewer)   
+    D. 磁盘清理 (Disk Cleanup)   
+
+5.  新买的USB设备插入电脑后无法识别，设备管理器中显示黄色感叹号。解决方法是：  
+A. 更换USB接口  
+B. 重启电脑  
+C. 下载并安装对应的设备驱动程序  
+D. 更换USB数据线
+
+6.  在Windows CMD中，如何切换到D盘的 `Projects` 目录？\
+A. `cd D:\Projects`  
+B. `dir D:\Projects`  
+C. `D: && cd Projects`  
+D. `D:`  
+
+第6题：此时的CMD状态为（横线处填写命令）：
+```bash
+C:\Users\Admin> cd /d D:\Projects
+
+D:\Projects> cd /d C:\
+
+C:\> ________
+```  
+
+7.  电脑开机后出现蓝屏错误，错误代码为“MEMORY_MANAGEMENT”。经过检查，没有病毒。最可能的原因和解决方法是什么？  
+A. 硬盘空间不足，清空临时文件  
+B. 内存条接触不良，重新插拔内存条  
+C. 显卡驱动过时，更新驱动  
+D. 系统文件损坏，重装操作系统  
+
+8. 电脑遇到一般性问题（指非Fatal Error），最便捷的初步修复（检查）方案是什么？\
+A. 重装系统\
+B. 检查硬件状况\
+C. 重启电脑或软件\
+D. 下载第三方修复工具
+
+---
+
+### 以下为第二部分。
+
+9.  下面哪种写法可以一次性从列表 `data` 中取出第2到第4个的元素？   
+A. `data(1:3)`  
+B. `data[2:4]`  
+C. `data[1:4]`  
+D. `data.slice(1,4)`
+>第9题：此处“个”不指代索引
+
+10. 下面哪段代码会抛出 `TypeError`？  
+A. `sum([1, 2, 3])`  
+B. `"5" + 5`  
+C. `len({"a": 1})`  
+D. `int("42")`
+
+11.  在Python中，要获取字典`person = {"name": "Alice", "age": 25, "city": "New York"}`中"user_id"键的值（如果键不存在则返回"unknown"），以下方法中只有一种方法是错误的，请选出错误的方法：\
+A. `person.get("user_id", "unknown")`\
+B. `person["user_id"] if "user_id" in person.keys() else "unknown"`\
+C. `try: person["user_id"] except: "unknown"`\
+D. `person.fetch("user_id", default="unknown")`
+
+12.  将字符串 `"Hello World"` 转换为 `"hello_world"` 的正确方法是：   
+A. `"Hello World".lower().replace(" ", "_")`  
+B. `"Hello World".lowercase().substitute(" ", "_")`  
+C. `"Hello World".tolower().change(" ", "_")`  
+D. `"Hello World".down().swap(" ", "_")`
+
+13.  以下代码的输出是什么？  
+A. 1 2 3 0  
+B. 2 1 0   
+C. 3 2 1 0   
+D. 3 2 1  
+
+第13题：代码如下：
+```python
+for i in range(3, 0, -1):
+    print(i, end=" ")
+```  
+
+14.  在Python的Class（类）中，一定要定义的一个函数是什么？\
+A.  `__name__`\
+B.  `__del__`\
+C.  `__iter__`\
+D.  `__init__`
+
+第14题：示例如下：
+```python
+class Example:
+    def 在此处填空(self):
+        ...
+    def example1(self, *args, **kwargs):
+        ...
+```
+
+15.  分析以下Python代码，它的输出结果是什么？   
+    A. `["banana"]`\
+    B. `["apple", "banana"]`\
+    C. `["apple"]`\
+    D. `["banana","apple"]`
+
+第15题：代码如下：
+```python
+    def add_item(item, smart_list=[]):
+        smart_list.append(item)
+        return smart_list
+
+    list1 = add_item("apple")
+    list2 = add_item("banana")
+
+    print(list1)
+```
+
+---
+
+### 以下为第三部分。
+
+16.  你对进入开发者社之后的学习旅程有什么想法？你可以分享你想学的内容和方向，你期望的学习速度，如果参加开发，你有什么想要开发的项目？都可以和我们分享！
+>[!TIP]
+>该部分内容也请写在结尾的答题区域。\
+>当然，如果你没有什么想要说的，也可以不写。
+
+
+### 以下为答题区域。
+
+
+<!-- 表格：第 1 行 1~15；第 2 行空白；第 3 行合并单元格写 16；第 4 行空白 -->
+<table style="border-collapse:collapse; width:100%;">
+  <!-- 第 1 行：1 ~ 15 -->
+  <tr>
+    <!-- 重复 15 次 -->
+    <th style="border:1px solid #ffffffff; padding:4px;">1</th>
+    <th style="border:1px solid #ffffffff; padding:4px;">2</th>
+    <th style="border:1px solid #ffffffff; padding:4px;">3</th>
+    <th style="border:1px solid #ffffffff; padding:4px;">4</th>
+    <th style="border:1px solid #ffffffff; padding:4px;">5</th>
+    <th style="border:1px solid #ffffffff; padding:4px;">6</th>
+    <th style="border:1px solid #ffffffff; padding:4px;">7</th>
+    <th style="border:1px solid #ffffffff; padding:4px;">8</th>
+    <th style="border:1px solid #ffffffff; padding:4px;">9</th>
+    <th style="border:1px solid #ffffffff; padding:4px;">10</th>
+    <th style="border:1px solid #ffffffff; padding:4px;">11</th>
+    <th style="border:1px solid #ffffffff; padding:4px;">12</th>
+    <th style="border:1px solid #ffffffff; padding:4px;">13</th>
+    <th style="border:1px solid #ffffffff; padding:4px;">14</th>
+    <th style="border:1px solid #ffffffff; padding:4px;">15</th>
+  </tr>
+
+  <!-- 第 2 行：空白 -->
+  <tr>
+    <!-- 同样 15 个单元格，占位即可 -->
+    <td style="border:1px solid #ffffffff;">&nbsp;</td>
+    <td style="border:1px solid #ffffffff;">&nbsp;</td>
+    <td style="border:1px solid #ffffffff;">&nbsp;</td>
+    <td style="border:1px solid #ffffffff;">&nbsp;</td>
+    <td style="border:1px solid #ffffffff;">&nbsp;</td>
+    <td style="border:1px solid #ffffffff;">&nbsp;</td>
+    <td style="border:1px solid #ffffffff;">&nbsp;</td>
+    <td style="border:1px solid #ffffffff;">&nbsp;</td>
+    <td style="border:1px solid #ffffffff;">&nbsp;</td>
+    <td style="border:1px solid #ffffffff;">&nbsp;</td>
+    <td style="border:1px solid #ffffffff;">&nbsp;</td>
+    <td style="border:1px solid #ffffffff;">&nbsp;</td>
+    <td style="border:1px solid #ffffffff;">&nbsp;</td>
+    <td style="border:1px solid #ffffffff;">&nbsp;</td>
+    <td style="border:1px solid #ffffffff;">&nbsp;</td>
+  </tr>
+
+  <!-- 第 3 行：单元格“16”横跨 15 列 -->
+  <tr>
+    <td colspan="15" style="border:1px solid #ffffffff; text-align:center; padding:6px;">16</td>
+  </tr>
+
+  <!-- 第 4 行：一个跨 15 列的空白大单元格，可按需调整高度 -->
+  <tr>
+    <td colspan="15" style="border:1px solid #ffffffff; height:200px;">&nbsp;</td>
+  </tr>
+</table>
